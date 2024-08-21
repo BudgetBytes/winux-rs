@@ -1,0 +1,9 @@
+[package]
+name = "rsgrep"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ansi_term = "0.12.1"
+regex = "1.10.6"
+walkdir = "2.5.0"
