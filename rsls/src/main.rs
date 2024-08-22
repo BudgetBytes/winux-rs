@@ -91,7 +91,7 @@ fn print_filename(metadata: &Metadata, entry: &DirEntry, filename: &str) {
     } else if metadata.is_file() {
         print!("{}", filename);
     } else {
-        let style = Colour::Blue.bold();
+        let style = Colour::Cyan.bold();
         if let Ok(link) = fs::read_link(entry.path()) {
             print!("{} -> {}", style.paint(filename), link.display());
         } else {

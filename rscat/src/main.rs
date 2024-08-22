@@ -40,7 +40,6 @@ fn main() {
     let examples = vec![
         format!("{program_name} <file1.txt> // Print in console file1.txt content"),
         format!("{program_name}  <file1.txt> <file2.txt> > out.txt // Concatenate two files"),
-        format!("{program_name} <file1.txt> -c // Print line count"),
         ];
     let mut cli = Rscli::new(program_name, program_flags, examples);
     cli.parse_args(&args);
